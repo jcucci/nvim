@@ -44,7 +44,20 @@ return packer.startup(function(use)
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
+
+  -- Colorschemes
   use "lunarvim/darkplus.nvim"
+
+  -- cmp plugins
+  use "hrsh7th/nvim-cmp" -- Completion plugin
+  use "hrsh7th/cmp-buffer" -- Buffer completions
+  use "hrsh7th/cmp-path" -- Path completions
+  use "hrsh7th/cmp-cmdline" -- Command line completions
+  use "saadparwaiz1/cmp_luasnip" -- Snippet completions
+
+  -- snippets
+  use "L3MON4D3/LuaSnip" -- Snippet engine
+  use "rafamadriz/friendly-snippets" -- Snippet library
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
